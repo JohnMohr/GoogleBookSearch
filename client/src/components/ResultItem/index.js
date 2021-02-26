@@ -9,7 +9,7 @@ class ResultItem extends Component {
         text: "Save"
     }
 
-    componentDidMOunt = () => {
+    componentDidMount = () => {
         this.setState({
             mounted: true
         })
@@ -17,7 +17,7 @@ class ResultItem extends Component {
     }
 
     getStyle = () => {
-        if (this.state.text === "save") {
+        if (this.state.text === "Save") {
             this.setState({
                 bgColor: "darkslategrey",
                 color: "antiquewhite",
@@ -37,10 +37,8 @@ onClickFunc = () => {
     this.props.saveGoogleBook(this.props)
     this.getStyle();
 }
-}
-
-render () 
-    const {book} = this.props
+render () {
+    
     return (
         
         <div>
@@ -49,7 +47,7 @@ render ()
                 <div className="card-body">
                     <img src={this.props.image} style={{maxwidth: "100px"}} alt="book"/>
                     <h5 className="card-title" style={{margin: "10px 0"}}>{this.props.title}</h5>
-                    <p clasName="card-text" >{this.props.description}</p>
+                    <p className="card-text" >{this.props.description}</p>
                     <p style={{fontstyle: "italic"}}>Author(s): {this.props.authors}</p>
                     <a href={this.props.link} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{marginRight: "6px"}}>View Book</a>
                     <button onClick={this.onClickFunc} style={{backgroundColor: this.state.bgColor, color: this.state.color}} className="btn">{this.state.text}</button>
@@ -57,6 +55,10 @@ render ()
             </div>
        </div>
     )
+}
+
+}
+
 
     
 export default ResultItem;

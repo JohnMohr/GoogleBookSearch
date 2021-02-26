@@ -8,7 +8,7 @@ export default {
         return axios.post("/api/books", bookData);
     },
     getBooks: function() {
-        return axios.get("api/books");
+        return axios.get("/api/books");
     },
     getBook: function(id) {
         return axios.get("/api/books/" + id);

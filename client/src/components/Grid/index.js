@@ -1,6 +1,6 @@
 import React from "react";
 
-export function container({fluid, children }) {
+export function Container({fluid, children }) {
     return <div className={`container${fluid ? "-fluid" : ""}`}>{children}</div>;
 }
 
