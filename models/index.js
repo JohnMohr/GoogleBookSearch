@@ -1,4 +1,4 @@
 module.exports = {
-    bookshelf: require("./book")
+    Book: require("./book")
   };
   
